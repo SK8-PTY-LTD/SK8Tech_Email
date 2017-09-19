@@ -8,7 +8,8 @@ This repo holds the template of our email templates.
 1. HR
 	1. [Internship Acceptance Email](hr/acceptance.html)
 	1. [Internship Rejection Email](hr/rejection.html) 
-1. Domain Reseller
+1. [Domain Reseller](https://domain.sk8.tech)
+1. [Hosting Reseller](https://whmcs.sk8.tech)
 
 ## Styling Guidelines
 
