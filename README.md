@@ -5,8 +5,10 @@ This repo holds the template of our email templates.
 ## Files
 
 1. [Email Signature](signature.html)
-1. [Internship Acceptance Email](hr/acceptance.html)
-1. [Internship Rejection Email](hr/rejection.html) 
+1. HR
+	1. [Internship Acceptance Email](hr/acceptance.html)
+	1. [Internship Rejection Email](hr/rejection.html) 
+1. Domain Reseller
 
 ## Styling Guidelines
 
