@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;Dear {$client_name},&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;PLEASE PRINT THIS MESSAGE FOR YOUR RECORDS - PLEASE READ THIS EMAIL IN FULL.&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;We are pleased to tell you that the server you ordered has now been set up and is operational.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Server Details&lt;br /&gt; &lt;/strong&gt;=============================&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$service_product_name}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Main IP: {$service_dedicated_ip}&lt;br /&gt; Root pass: {$service_password}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;IP address allocation: &lt;br /&gt; {$service_assigned_ips}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;ServerName: {$service_domain}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;WHM Access&lt;br /&gt; &lt;/strong&gt;=============================&lt;br /&gt; &lt;a href="http://xxxxx:2086/"&gt;http://xxxxx:2086&lt;/a&gt;&lt;br /&gt; Username: root&lt;br /&gt; Password: {$service_password}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Custom DNS Server Addresses&lt;/strong&gt;&lt;br /&gt; =============================&lt;br /&gt; The custom DNS addresses you should set for your domain to use are: &lt;br /&gt; Primary DNS: {$service_ns1}&lt;br /&gt; Secondary DNS: {$service_ns2}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;You will have to login to your registrar and find the area where you can specify both of your custom name server addresses.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;After adding these custom nameservers to your domain registrar control panel, it will take 24 to 48 hours for your domain to delegate authority to your DNS server. Once this has taken effect, your DNS server has control over the DNS records for the domains which use your custom name server addresses.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;SSH Access Information&lt;br /&gt; &lt;/strong&gt;=============================&lt;br /&gt; Main IP Address: xxxxxxxx&lt;br /&gt; Server Name: {$service_domain}&lt;br /&gt; Root Password: xxxxxxxx&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;You can access your server using a free simple SSH client program called Putty located at:&lt;br /&gt; &lt;a href="http://www.securitytools.net/mirrors/putty/"&gt;http://www.securitytools.net/mirrors/putty/&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Support&lt;/strong&gt;&lt;br /&gt; =============================&lt;br /&gt; For any support needs, please open a ticket at &lt;a href="{$whmcs_url}"&gt;{$whmcs_url}&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Please include any necessary information to provide you with faster service, such as root password, domain names, and a description of the problem / or assistance needed. This will speed up the support time by allowing our administrators to immediately begin diagnosing the problem.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;The manual for cPanel can be found here: &lt;a href="http://www.cpanel.net/docs/cp/"&gt;http://www.cpanel.net/docs/cp/&lt;/a&gt; &lt;br /&gt; For documentation on using WHM please see the following link: &lt;a href="http://www.cpanel.net/docs/whm/index.html"&gt;http://www.cpanel.net/docs/whm/index.html&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;=============================&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;If you need to move accounts to the server use: Transfers Copy an account from another server with account password&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;a href="http://xxxxxxx:2086/scripts2/norootcopy"&gt;http://xxxxxxx:2086/scripts2/norootcopy&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Note the other server must use cpanel to move it.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;=============================&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$signature}&lt;/p&gt;</p>
+</body>
+</html>

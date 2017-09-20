@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;The escalation rule {$rule_name} has just been applied to this ticket.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Client: {$client_name}{if $client_id} #{$client_id}{/if} &lt;br /&gt;Department: {$ticket_department} &lt;br /&gt;Subject: {$ticket_subject} &lt;br /&gt;Priority: {$ticket_priority}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;---&lt;br /&gt;{$ticket_message}&lt;br /&gt;---&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;You can respond to this ticket by simply replying to this email or through the admin area at the url below.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;a href="{$whmcs_admin_url}supporttickets.php?action=viewticket&amp;amp;id={$ticket_id}"&gt;{$whmcs_admin_url}supporttickets.php?action=viewticket&amp;amp;id={$ticket_id}&lt;/a&gt;&lt;/p&gt;</p>
+</body>
+</html>

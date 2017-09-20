@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">{if $newTicket}</p>
+<p class="p1">&lt;p&gt;Ticket #&lt;a href="{$whmcs_admin_url}supporttickets.php?action=viewticket&amp;amp;id={$ticket_id}"&gt;&lt;strong&gt;{$ticket_tid}&lt;/strong&gt;&lt;/a&gt; has been opened by &lt;strong&gt;{$changer}&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Client: {$client_name}{if $client_id} #{$client_id}{/if}&lt;br /&gt; Department: {$ticket_department}&lt;br /&gt; Subject: {$ticket_subject}&lt;br /&gt; Priority: {$ticket_priority}&lt;/p&gt;</p>
+<p class="p1">&lt;div class="quoted-content"&gt;{$newTicket}&lt;/div&gt;</p>
+<p class="p1">{else}</p>
+<p class="p1">&lt;p&gt;Ticket #&lt;a href="{$whmcs_admin_url}supporttickets.php?action=viewticket&amp;amp;id={$ticket_id}"&gt;&lt;strong&gt;{$ticket_tid}&lt;/strong&gt;&lt;/a&gt; {if $newReply || $newNote}has had a new {if $newReply}reply{else}note{/if} posted by{else}has been updated by{/if} &lt;strong&gt;{$changer}&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1">{if $changes}{foreach $changes as $change}{/foreach}</p>
+<p class="p1">&lt;table class="keyvalue-table" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"&gt;</p>
+<p class="p1">&lt;tbody&gt;</p>
+<p class="p1">&lt;tr&gt;</p>
+<p class="p1">&lt;td&gt;{$change@key}:&lt;/td&gt;</p>
+<p class="p1">&lt;td&gt;&lt;span style="background-color: #ffe7e7; text-decoration: line-through;"&gt;{$change.old}&lt;/span&gt; &lt;span style="background-color: #ddfade;"&gt;{$change.new}&lt;/span&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">{/if} {if $newReply}</p>
+<p class="p1">&lt;div class="quoted-content"&gt;{$newReply}&lt;/div&gt;</p>
+<p class="p1">{/if} {if $newNote}</p>
+<p class="p1">&lt;div class="quoted-content"&gt;{$newNote}&lt;/div&gt;</p>
+<p class="p1">{/if} {if $newAttachments}{$newAttachments}{/if} {/if}</p>
+<p class="p1">&lt;p&gt;You can respond to this ticket by simply replying to this email or through the admin area at the url below.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;a href="{$whmcs_admin_url}supporttickets.php?action=viewticket&amp;amp;id={$ticket_id}"&gt; {$whmcs_admin_url}supporttickets.php?action=viewticket&amp;amp;id={$ticket_id} &lt;/a&gt;&lt;/p&gt;</p>
+</body>
+</html>

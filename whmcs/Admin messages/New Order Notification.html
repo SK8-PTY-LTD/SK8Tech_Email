@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Order Information&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Order ID: {$order_id}&lt;br /&gt; Order Number: {$order_number}&lt;br /&gt; Date/Time: {$order_date}&lt;br /&gt; Invoice Number: {$invoice_id}&lt;br /&gt; Payment Method: {$order_payment_method}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Customer Information&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Customer ID: {$client_id}&lt;br /&gt; Name: {$client_first_name} {$client_last_name}&lt;br /&gt; Email: {$client_email}&lt;br /&gt; Company: {$client_company_name}&lt;br /&gt; Address 1: {$client_address1}&lt;br /&gt; Address 2: {$client_address2}&lt;br /&gt; City: {$client_city}&lt;br /&gt; State: {$client_state}&lt;br /&gt; Postcode: {$client_postcode}&lt;br /&gt; Country: {$client_country}&lt;br /&gt; Phone Number: {$client_phonenumber}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Order Items&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$order_items}&lt;/p&gt;</p>
+<p class="p1">{if $order_notes}</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Order Notes&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$order_notes}&lt;/p&gt;</p>
+<p class="p1">{/if}</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;ISP Information&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;IP: {$client_ip}&lt;br /&gt; Host: {$client_hostname}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;a href="{$whmcs_admin_url}orders.php?action=view&amp;amp;id={$order_id}"&gt;{$whmcs_admin_url}orders.php?action=view&amp;amp;id={$order_id}&lt;/a&gt;&lt;/p&gt;</p>
+</body>
+</html>

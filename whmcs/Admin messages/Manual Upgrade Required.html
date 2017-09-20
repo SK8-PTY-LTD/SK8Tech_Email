@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;An upgrade order has received its payment, but does not support automatic upgrades and requires manually processing.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Client ID: {$client_id}&lt;br /&gt;Service ID: {$service_id}&lt;br /&gt;Order ID: {$order_id}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{if $upgrade_type eq 'package'}New Package ID: {$new_package_id}&lt;br /&gt;Existing Billing Cycle: {$billing_cycle}&lt;br /&gt;New Billing Cycle: {$new_billing_cycle}{else}Configurable Option: {$config_id}&lt;br /&gt;Option Type: {$option_type}&lt;br /&gt;Current Value: {$current_value}&lt;br /&gt;New Value: {$new_value}{/if}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;a href="{$whmcs_admin_url}orders.php?action=view&amp;amp;id={$order_id}"&gt; {$whmcs_admin_url}orders.php?action=view&amp;amp;id={$order_id}&lt;/a&gt;&lt;/p&gt;</p>
+</body>
+</html>

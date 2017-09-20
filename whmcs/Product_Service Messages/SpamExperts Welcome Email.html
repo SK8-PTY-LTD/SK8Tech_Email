@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;Congratulations!&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Your service has been setup and is ready for you to begin using.&lt;/p&gt;</p>
+<p class="p1">{if $configuration_required}</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Required Action&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;To begin using SpamExperts mail services, you must modify the MX records for your domain to the following:&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{foreach $required_mx_records as $mx_host =&amp;gt; $mx_priority} {$mx_host} with a recommended priority of {$mx_priority}&lt;br /&gt; {/foreach}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;We have guides available for this at &lt;a href="https://my.spamexperts.com/kb/109/Hosted-Cloud-MX-records.html"&gt;https://my.spamexperts.com/kb/109/Hosted-Cloud-MX-records.html&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">{/if}</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Managing your Service&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;You can access and manage your email filtering at any time from our client area at &lt;a href="{$whmcs_url}"&gt;{$whmcs_url}&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Simply login and look for the SpamExperts Manage link on the homepage.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;If you need any further assistance, please contact our &lt;a href="{$whmcs_url}submitticket.php"&gt;support team&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$signature}&lt;/p&gt;</p>
+</body>
+</html>

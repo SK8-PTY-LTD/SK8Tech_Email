@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;Dear {$client_name},&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{if $days_until_expiry}The domain(s) listed below are due to expire within the next {$days_until_expiry} days.{else}The domain(s) listed below are going to expire in {$domain_days_until_expiry} days. Renew now before it's too late...{/if}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{if $expiring_domains}{foreach from=$expiring_domains item=domain}{$domain.name} - {$domain.nextduedate} &lt;strong&gt;({$domain.days} Days)&lt;/strong&gt;&lt;br /&gt;{/foreach}{elseif $domains}{foreach from=$domains item=domain}{$domain.name} - {$domain.nextduedate}&lt;br /&gt;{/foreach}{else}{$domain_name} - {$domain_next_due_date} &lt;strong&gt;({$domain_days_until_nextdue} Days)&lt;/strong&gt;{/if}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;To ensure the domain does not expire, you should renew it now. You can do this from the domains management section of our client area here: {$whmcs_link}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Should you allow the domain to expire, you will be able to renew it for up to 30 days after the renewal date. During this time, the domain will not be accessible so any web site or email services associated with it will stop working.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$signature}&lt;/p&gt;</p>
+</body>
+</html>

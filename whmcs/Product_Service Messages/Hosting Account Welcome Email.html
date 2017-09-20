@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;Dear {$client_name},&lt;/p&gt;</p>
+<p class="p1">&lt;p align="center"&gt;&lt;strong&gt;PLEASE READ THIS EMAIL IN FULL AND PRINT IT FOR YOUR RECORDS&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Thank you for your order from us! Your hosting account has now been setup and this email contains all the information you will need in order to begin using your account.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;If you have requested a domain name during sign up, please keep in mind that your domain name will not be visible on the internet instantly. This process is called propagation and can take up to 48 hours. Until your domain has propagated, your website and email will not function, we have provided a temporary url which you may use to view your website and upload files in the meantime.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;New Account Information&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Hosting Package: {$service_product_name}&lt;br /&gt;Domain: {$service_domain}&lt;br /&gt;First Payment Amount: {$service_first_payment_amount}&lt;br /&gt;Recurring Amount: {$service_recurring_amount}&lt;br /&gt;Billing Cycle: {$service_billing_cycle}&lt;br /&gt;Next Due Date: {$service_next_due_date}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Login Details&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Username: {$service_username}&lt;br /&gt;Password: {$service_password}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Control Panel URL: &lt;a href="http://{$service_server_ip}:2082/"&gt;http://{$service_server_ip}:2082/&lt;/a&gt;&lt;br /&gt;Once your domain has propagated, you may also use &lt;a href="http://www.{$service_domain}:2082/"&gt;http://www.{$service_domain}:2082/&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Server Information&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Server Name: {$service_server_name}&lt;br /&gt;Server IP: {$service_server_ip}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;If you are using an existing domain with your new hosting account, you will need to update the nameservers to point to the nameservers listed below.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Nameserver 1: {$service_ns1} ({$service_ns1_ip})&lt;br /&gt;Nameserver 2: {$service_ns2} ({$service_ns2_ip}){if $service_ns3}&lt;br /&gt;Nameserver 3: {$service_ns3} ({$service_ns3_ip}){/if}{if $service_ns4}&lt;br /&gt;Nameserver 4: {$service_ns4} ({$service_ns4_ip}){/if}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Uploading Your Website&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Temporarily you may use one of the addresses given below to manage your web site:&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Temporary FTP Hostname: {$service_server_ip}&lt;br /&gt;Temporary Webpage URL: &lt;a href="http://{$service_server_ip}/~{$service_username}/"&gt;http://{$service_server_ip}/~{$service_username}/&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;And once your domain has propagated you may use the details below:&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;FTP Hostname: {$service_domain}&lt;br /&gt;Webpage URL: &lt;a href="http://www.{$service_domain}"&gt;http://www.{$service_domain}&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Email Settings&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;For email accounts that you setup, you should use the following connection details in your email program:&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;POP3 Host Address: mail.{$service_domain}&lt;br /&gt;SMTP Host Address: mail.{$service_domain}&lt;br /&gt;Username: The email address you are checking email for&lt;br /&gt;Password: As specified in your control panel&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Thank you for choosing us.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$signature}&lt;/p&gt;</p>
+</body>
+</html>

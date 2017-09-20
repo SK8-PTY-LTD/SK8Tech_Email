@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;p&gt;{$client_name},&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Your email to our ticket system could not be accepted because the ticket being responded to has already been closed.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{if $client_id}If you wish to reopen this ticket, you can do so from our client area: {$ticket_link}{else}To open a new ticket, please visit:&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;a href="{$whmcs_url}/submitticket.php"&gt;{$whmcs_url}/submitticket.php&lt;/a&gt;{/if}&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;This is an automated response from our support system.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;{$signature}&lt;/p&gt;</p>
+</body>
+</html>
